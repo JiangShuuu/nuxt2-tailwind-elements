@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import { Modal } from 'tw-elements'
-
+import { Modal, Toast } from 'tw-elements'
 Vue.prototype.$modal = Modal
+Vue.prototype.$toast = Toast

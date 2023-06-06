@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col items-center justify-center h-screen space-y-4 relative">
+    <h1 class="text-4xl absolute top-0">Modal Page</h1>
     <div class="border-b pb-2 flex items-center w-3/4 space-x-2">
       <p>Basic：</p>
       <button
