@@ -3,8 +3,10 @@
     :id="name"
     data-te-modal-init
     class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+    data-te-backdrop="static"
+    data-te-keyboard="false"
     tabindex="-1"
-    aria-labelledby="exampleModalLabel"
+    aria-labelledby="staticBackdropLabel"
     aria-hidden="true"
   >
     <div
@@ -49,9 +51,7 @@
         </div>
 
         <!--Modal body-->
-        <div class="relative flex-auto p-4" data-te-modal-body-ref>
-          Modal body text goes here.
-        </div>
+        <div data-te-modal-body-ref class="relative p-4">...</div>
 
         <!--Modal footer-->
         <div
@@ -72,7 +72,7 @@
             data-te-ripple-init
             data-te-ripple-color="light"
           >
-            Save changes
+            Understood
           </button>
         </div>
       </div>
@@ -82,11 +82,11 @@
 
 <script>
 export default {
-  name: 'ModalBase',
+  name: 'ModalStatic',
   props: {
     name: {
       type: String,
-      default: 'modal',
+      default: 'modalstatic',
     },
   },
 }
