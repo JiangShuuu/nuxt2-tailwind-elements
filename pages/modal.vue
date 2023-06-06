@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center h-screen space-y-4">
+  <div class="flex flex-col items-center justify-center h-screen space-y-4 relative">
     <div class="border-b pb-2 flex items-center w-3/4 space-x-2">
       <p>Basic：</p>
       <button
@@ -44,6 +44,7 @@
     <!-- Modal Static -->
     <ModalStatic name="staticBackdrop" />
     <ModalStatic ref="static" />
+    <div class="absolute top-4 left-10 cursor-pointer hover:text-red" @click.prevent="$router.back()">返回</div>
   </div>
 </template>
 
