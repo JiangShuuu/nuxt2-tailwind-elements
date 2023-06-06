@@ -23,6 +23,10 @@ export default {
       src: '~/node_modules/tw-elements/dist/js/tw-elements.umd.min.js',
       mode: 'client',
     },
+    {
+      src: '~/plugins/tw-element.js',
+      mode: 'client',
+    },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
