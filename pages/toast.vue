@@ -11,12 +11,6 @@
       >
         自訂按下開啟
       </div>
-      <div
-        class="border p-2 cursor-pointer hover:bg-primary hover:text-white"
-        @click="getToastBasic"
-      >
-        自訂按下關閉
-      </div>
     </div>
     <div class="border-b pb-2 w-3/4 flex items-center space-x-2">
       <p>Static：</p>
@@ -50,15 +44,7 @@ export default {
       toast.show()
       setTimeout(() => {
         toast.hide()
-      }, 1000)
-    },
-    getModalStatic() {
-      const observer = this.$refs.static.$el
-      const modal = new this.$modal(observer)
-      modal.show()
-      setTimeout(() => {
-        modal.hide()
-      }, 2000)
+      }, 3000)
     },
   },
 }
