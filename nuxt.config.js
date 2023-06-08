@@ -11,7 +11,20 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css',
+      },
+    ],
+    script: [
+      {
+        src: 'https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js',
+        body: true,
+        defer: true,
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -19,11 +32,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {
-      src: '~/node_modules/tw-elements/dist/js/tw-elements.umd.min.js',
-      type: 'text/javascript',
-      mode: 'client',
-    },
     {
       src: '~/plugins/tw-element.js',
       mode: 'client',
