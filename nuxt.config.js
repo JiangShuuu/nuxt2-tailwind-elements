@@ -12,12 +12,6 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      {
-        src: '~/node_modules/tw-elements/dist/js/tw-elements.umd.min.js',
-        type: 'text/javascript',
-      },
-    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -25,6 +19,11 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: '~/node_modules/tw-elements/dist/js/tw-elements.umd.min.js',
+      type: 'text/javascript',
+      mode: 'client',
+    },
     {
       src: '~/plugins/tw-element.js',
       mode: 'client',

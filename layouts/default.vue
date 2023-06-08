@@ -1,7 +1,8 @@
 <template>
-  <div class="relative pt-14 lg:pt-16">
-    <Sidebar />
-   
+  <div class="">
+    <!-- <client-only>
+      <Sidebar />
+    </client-only> -->
     <nuxt />
   </div>
 </template>
